@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -92,11 +92,76 @@
 </ul>
 <blockquote>
 <h2 id="Buat-Repositori-Baru"><a href="#Buat-Repositori-Baru" class="headerlink" title="Buat Repositori Baru"></a>Buat Repositori Baru</h2></blockquote>
-<h3 id="Dengan-cara-git-init"><a href="#Dengan-cara-git-init" class="headerlink" title="Dengan cara : git init"></a>Dengan cara : <code>git init</code></h3>
+<h3 id="Dengan-cara-git-init"><a href="#Dengan-cara-git-init" class="headerlink" title="Dengan cara : git init"></a>Dengan cara : <code>git init</code></h3><blockquote>
+<h2 id="Periksa-Repositori"><a href="#Periksa-Repositori" class="headerlink" title="Periksa Repositori"></a>Periksa Repositori</h2></blockquote>
+<h3 id="Buat-salinan-kerja-dari-repositori-lokal-dengan-cara-git-clone-jalur-ke-repositori"><a href="#Buat-salinan-kerja-dari-repositori-lokal-dengan-cara-git-clone-jalur-ke-repositori" class="headerlink" title="Buat salinan kerja dari repositori lokal dengan cara : git clone /jalur/ke/repositori"></a>Buat salinan kerja dari repositori lokal dengan cara : <code>git clone /jalur/ke/repositori</code></h3><h3 id="Saat-menggunakan-server-jarak-jauh-git-clone-namapengguna-host-jalur-ke-repositori"><a href="#Saat-menggunakan-server-jarak-jauh-git-clone-namapengguna-host-jalur-ke-repositori" class="headerlink" title="Saat menggunakan server jarak jauh : git clone namapengguna@host:/jalur/ke/repositori"></a>Saat menggunakan server jarak jauh : <code>git clone namapengguna@host:/jalur/ke/repositori</code></h3><blockquote>
+<h2 id="Alur-Kerja"><a href="#Alur-Kerja" class="headerlink" title="Alur Kerja"></a>Alur Kerja</h2></blockquote>
+<h3 id="Repositori-lokal-trees-dikelolah-oleh-git-Yang-berisi"><a href="#Repositori-lokal-trees-dikelolah-oleh-git-Yang-berisi" class="headerlink" title="Repositori lokal (trees) dikelolah oleh git. Yang berisi"></a>Repositori lokal (trees) dikelolah oleh git. Yang berisi</h3><ul>
+<li><h4 id="Direktori-Kerja"><a href="#Direktori-Kerja" class="headerlink" title="Direktori Kerja"></a>Direktori Kerja</h4></li>
+<li><h4 id="Direktori-Index"><a href="#Direktori-Index" class="headerlink" title="Direktori Index"></a>Direktori Index</h4></li>
+<li><h4 id="Direktori-HEAD"><a href="#Direktori-HEAD" class="headerlink" title="Direktori HEAD"></a>Direktori HEAD</h4><h3 id="Dan-mengarah-kepada-commit-terakhir"><a href="#Dan-mengarah-kepada-commit-terakhir" class="headerlink" title="Dan mengarah kepada commit terakhir"></a>Dan mengarah kepada <code>commit</code> terakhir</h3></li>
+</ul>
+<blockquote>
+<h2 id="Tambah-amp-Commit"><a href="#Tambah-amp-Commit" class="headerlink" title="Tambah &amp; Commit"></a>Tambah &amp; Commit</h2></blockquote>
+<h3 id="Kita-dapat-melakukan-langkah-awal-perubahan-atau-penambahan-index-dengan-cara"><a href="#Kita-dapat-melakukan-langkah-awal-perubahan-atau-penambahan-index-dengan-cara" class="headerlink" title="Kita dapat melakukan langkah awal perubahan atau penambahan index dengan cara :"></a>Kita dapat melakukan langkah awal perubahan atau penambahan index dengan cara :</h3><blockquote>
+<h4 id="git-add-lt-namaberkas-gt"><a href="#git-add-lt-namaberkas-gt" class="headerlink" title="git add &lt;namaberkas&gt;"></a><code>git add &lt;namaberkas&gt;</code></h4><h4 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a><code>git add</code></h4></blockquote>
+<h3 id="Untuk-Commit-sepenuh-nya-kita-dapat-melakukan-dengan-cara"><a href="#Untuk-Commit-sepenuh-nya-kita-dapat-melakukan-dengan-cara" class="headerlink" title="Untuk Commit sepenuh nya kita dapat melakukan dengan cara :"></a>Untuk Commit sepenuh nya kita dapat melakukan dengan cara :</h3><blockquote>
+<h4 id="git-commit-m-quot-Pesan-komit-quot"><a href="#git-commit-m-quot-Pesan-komit-quot" class="headerlink" title="git commit -m &quot;Pesan komit&quot;"></a><code>git commit -m &quot;Pesan komit&quot;</code></h4></blockquote>
+<h3 id="Berkas-telah-bercommit-di-HEAD-namun-belum-di-repositori-dari-jarak-jauh"><a href="#Berkas-telah-bercommit-di-HEAD-namun-belum-di-repositori-dari-jarak-jauh" class="headerlink" title="Berkas telah bercommit di HEAD, namun belum di repositori dari jarak jauh"></a>Berkas telah bercommit di HEAD, namun belum di repositori dari jarak jauh</h3><blockquote>
+<h2 id="Mengirim-Perubahan"><a href="#Mengirim-Perubahan" class="headerlink" title="Mengirim Perubahan"></a>Mengirim Perubahan</h2></blockquote>
+<h3 id="Saat-perubahan-telah-tersimpan-di-HEAD-salinan-kerja-lokal-lakukan"><a href="#Saat-perubahan-telah-tersimpan-di-HEAD-salinan-kerja-lokal-lakukan" class="headerlink" title="Saat perubahan telah tersimpan di HEAD salinan kerja lokal, lakukan :"></a>Saat perubahan telah tersimpan di HEAD salinan kerja lokal, lakukan :</h3><blockquote>
+<h4 id="git-push-origin-master"><a href="#git-push-origin-master" class="headerlink" title="git push origin master"></a><code>git push origin master</code></h4></blockquote>
+<h3 id="Repositori-telah-terkirim-ke-jarak-jauh-dan-Ubah-master-sesuai-cabang-yang-kamu-inginkan"><a href="#Repositori-telah-terkirim-ke-jarak-jauh-dan-Ubah-master-sesuai-cabang-yang-kamu-inginkan" class="headerlink" title="Repositori telah terkirim ke jarak-jauh, dan Ubah master sesuai cabang yang kamu inginkan."></a>Repositori telah terkirim ke jarak-jauh, dan Ubah master sesuai cabang yang kamu inginkan.</h3><h3 id="Jika-repositori-yang-ada-belum-dikloning-dan-ingin-dihubungkan-ke-server-jarak-jauh-kamu-perlu-menambahkan"><a href="#Jika-repositori-yang-ada-belum-dikloning-dan-ingin-dihubungkan-ke-server-jarak-jauh-kamu-perlu-menambahkan" class="headerlink" title="Jika repositori yang ada belum dikloning dan ingin dihubungkan ke server jarak-jauh, kamu perlu menambahkan"></a>Jika repositori yang ada belum dikloning dan ingin dihubungkan ke server jarak-jauh, kamu perlu menambahkan</h3><blockquote>
+<h4 id="git-remote-add-origin-lt-server-gt"><a href="#git-remote-add-origin-lt-server-gt" class="headerlink" title="git remote add origin &lt;server&gt;"></a><code>git remote add origin &lt;server&gt;</code></h4></blockquote>
+<h3 id="Sekarang-kamu-bisa-mengirimkan-perubahan-ke-server-jarak-jauh-yang-dituju"><a href="#Sekarang-kamu-bisa-mengirimkan-perubahan-ke-server-jarak-jauh-yang-dituju" class="headerlink" title="Sekarang kamu bisa mengirimkan perubahan ke server jarak-jauh yang dituju"></a>Sekarang kamu bisa mengirimkan perubahan ke server jarak-jauh yang dituju</h3><blockquote>
+<h2 id="Cabang"><a href="#Cabang" class="headerlink" title="Cabang"></a>Cabang</h2></blockquote>
+<h3 id="Cabang-atau-branching-digunakan-untuk-mengembangkan-fitur-fitur-secara-terisolasi-Cabang-utama-atau-master-merupakan-cabang-bawaan-ketika-kamu-membuat-repositori-Gunakan-cabang-lain-untuk-pengembangan-setelah-selesai-gabungkan-kembali-ke-cabang-utama"><a href="#Cabang-atau-branching-digunakan-untuk-mengembangkan-fitur-fitur-secara-terisolasi-Cabang-utama-atau-master-merupakan-cabang-bawaan-ketika-kamu-membuat-repositori-Gunakan-cabang-lain-untuk-pengembangan-setelah-selesai-gabungkan-kembali-ke-cabang-utama" class="headerlink" title="Cabang atau branching digunakan untuk mengembangkan fitur-fitur secara terisolasi. Cabang utama atau master merupakan cabang bawaan ketika kamu membuat repositori. Gunakan cabang lain untuk pengembangan, setelah selesai, gabungkan kembali ke cabang utama."></a>Cabang atau branching digunakan untuk mengembangkan fitur-fitur secara terisolasi. Cabang utama atau master merupakan cabang bawaan ketika kamu membuat repositori. Gunakan cabang lain untuk pengembangan, setelah selesai, gabungkan kembali ke cabang utama.</h3><h3 id="buat-cabang-baru-dengan-nama-“fitur-x”-dan-beralih-kedalamnya-menggunakan"><a href="#buat-cabang-baru-dengan-nama-“fitur-x”-dan-beralih-kedalamnya-menggunakan" class="headerlink" title="buat cabang baru dengan nama “fitur_x” dan beralih kedalamnya menggunakan :"></a>buat cabang baru dengan nama “fitur_x” dan beralih kedalamnya menggunakan :</h3><blockquote>
+<h4 id="git-checkout-b-fitur-x"><a href="#git-checkout-b-fitur-x" class="headerlink" title="git checkout -b fitur_x"></a><code>git checkout -b fitur_x</code></h4></blockquote>
+<h3 id="beralih-kembali-ke-master"><a href="#beralih-kembali-ke-master" class="headerlink" title="beralih kembali ke master"></a>beralih kembali ke master</h3><blockquote>
+<h4 id="git-checkout-master"><a href="#git-checkout-master" class="headerlink" title="git checkout master"></a><code>git checkout master</code></h4></blockquote>
+<h3 id="dan-hapus-cabang-yang-tadi-dibuat"><a href="#dan-hapus-cabang-yang-tadi-dibuat" class="headerlink" title="dan hapus cabang yang tadi dibuat"></a>dan hapus cabang yang tadi dibuat</h3><blockquote>
+<h4 id="git-branch-d-fitur-x"><a href="#git-branch-d-fitur-x" class="headerlink" title="git branch -d fitur_x"></a><code>git branch -d fitur_x</code></h4></blockquote>
+<h3 id="suatu-cabang-tidak-terbuka-untuk-yang-lainnya-kecuali-jika-kamu-mengirimkannya-ke-repositori-jarak-jauh"><a href="#suatu-cabang-tidak-terbuka-untuk-yang-lainnya-kecuali-jika-kamu-mengirimkannya-ke-repositori-jarak-jauh" class="headerlink" title="suatu cabang tidak terbuka untuk yang lainnya kecuali jika kamu mengirimkannya ke repositori jarak-jauh."></a>suatu cabang tidak terbuka untuk yang lainnya kecuali jika kamu mengirimkannya ke repositori jarak-jauh.</h3><blockquote>
+<h5 id="git-push-origin-lt-cabang-gt"><a href="#git-push-origin-lt-cabang-gt" class="headerlink" title="git push origin &lt;cabang&gt;"></a><code>git push origin &lt;cabang&gt;</code></h5></blockquote>
+<blockquote>
+<h2 id="Perbarui-amp-Gabung"><a href="#Perbarui-amp-Gabung" class="headerlink" title="Perbarui &amp; Gabung"></a>Perbarui &amp; Gabung</h2></blockquote>
+<h3 id="untuk-memperbarui-repositori-lokal-ke-komit-terkini-lakukan"><a href="#untuk-memperbarui-repositori-lokal-ke-komit-terkini-lakukan" class="headerlink" title="untuk memperbarui repositori lokal ke komit terkini, lakukan :"></a>untuk memperbarui repositori lokal ke komit terkini, lakukan :</h3><blockquote>
+<h4 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a><code>git pull</code></h4></blockquote>
+<h3 id="dari-direktori-kerja-kamu-untuk-mengambil-dan-menggabungkan-perubahan-jarak-jauh"><a href="#dari-direktori-kerja-kamu-untuk-mengambil-dan-menggabungkan-perubahan-jarak-jauh" class="headerlink" title="dari direktori kerja kamu untuk mengambil dan menggabungkan perubahan jarak-jauh."></a>dari direktori kerja kamu untuk mengambil dan menggabungkan perubahan jarak-jauh.</h3><h3 id="untuk-menggabungkan-cabang-lain-ke-cabang-aktif-misal-master-gunakan"><a href="#untuk-menggabungkan-cabang-lain-ke-cabang-aktif-misal-master-gunakan" class="headerlink" title="untuk menggabungkan cabang lain ke cabang aktif (misal master), gunakan :"></a>untuk menggabungkan cabang lain ke cabang aktif (misal master), gunakan :</h3><blockquote>
+<h4 id="git-merge-lt-cabang-gt"><a href="#git-merge-lt-cabang-gt" class="headerlink" title="git merge &lt;cabang&gt;"></a><code>git merge &lt;cabang&gt;</code></h4></blockquote>
+<h3 id="pada-kasus-diatas-git-mencoba-menggabungkan-perubahan-secara-otomatis-Sayangnya-hal-ini-tak-selalu-berjalan-mulus-dan-bisa-menyebabkan-konflik-Kamu-lah-yang-bertanggung-jawab-menggabungkan-konflik-tersebut-secara-manual-dengan-menyunting-berkas-yang-ditunjukkan-git-Setelah-itu-kamu-perlu-memarkahinya-dengan"><a href="#pada-kasus-diatas-git-mencoba-menggabungkan-perubahan-secara-otomatis-Sayangnya-hal-ini-tak-selalu-berjalan-mulus-dan-bisa-menyebabkan-konflik-Kamu-lah-yang-bertanggung-jawab-menggabungkan-konflik-tersebut-secara-manual-dengan-menyunting-berkas-yang-ditunjukkan-git-Setelah-itu-kamu-perlu-memarkahinya-dengan" class="headerlink" title="pada kasus diatas, git mencoba menggabungkan perubahan secara otomatis. Sayangnya hal ini tak selalu berjalan mulus dan bisa menyebabkan konflik. Kamu lah yang bertanggung jawab menggabungkan konflik tersebut secara manual dengan menyunting berkas yang ditunjukkan git. Setelah itu, kamu perlu memarkahinya dengan :"></a>pada kasus diatas, git mencoba menggabungkan perubahan secara otomatis. Sayangnya hal ini tak selalu berjalan mulus dan bisa menyebabkan konflik. Kamu lah yang bertanggung jawab menggabungkan konflik tersebut secara manual dengan menyunting berkas yang ditunjukkan git. Setelah itu, kamu perlu memarkahinya dengan :</h3><blockquote>
+<h4 id="git-add-lt-namaberkas-gt-1"><a href="#git-add-lt-namaberkas-gt-1" class="headerlink" title="git add &lt;namaberkas&gt;"></a><code>git add &lt;namaberkas&gt;</code></h4></blockquote>
+<h4 id="sebelum-penggabungan-berlaku-kamu-bisa-melakukan-analisa-menggunakan"><a href="#sebelum-penggabungan-berlaku-kamu-bisa-melakukan-analisa-menggunakan" class="headerlink" title="sebelum penggabungan berlaku, kamu bisa melakukan analisa menggunakan :"></a>sebelum penggabungan berlaku, kamu bisa melakukan analisa menggunakan :</h4><blockquote>
+<h3 id="git-diff-lt-source-branch-gt-lt-target-branch-gt"><a href="#git-diff-lt-source-branch-gt-lt-target-branch-gt" class="headerlink" title="git diff &lt;source_branch&gt; &lt;target_branch&gt;"></a><code>git diff &lt;source_branch&gt; &lt;target_branch&gt;</code></h3></blockquote>
+<blockquote>
+<h2 id="Menandai"><a href="#Menandai" class="headerlink" title="Menandai"></a>Menandai</h2></blockquote>
+<h3 id="sangat-dianjurkan-membuat-penanda-atau-tags-untuk-perangkat-lunak-yang-dirilis-Hal-ini-amat-lah-lazim-yang-juga-terjadi-di-SVN-Kamu-bisa-membuat-penanda-baru-dengan-nama-1-0-0-dengan-menjalankan"><a href="#sangat-dianjurkan-membuat-penanda-atau-tags-untuk-perangkat-lunak-yang-dirilis-Hal-ini-amat-lah-lazim-yang-juga-terjadi-di-SVN-Kamu-bisa-membuat-penanda-baru-dengan-nama-1-0-0-dengan-menjalankan" class="headerlink" title="sangat dianjurkan membuat penanda atau tags untuk perangkat lunak yang dirilis. Hal ini amat lah lazim, yang juga terjadi di SVN. Kamu bisa membuat penanda baru dengan nama 1.0.0 dengan menjalankan :"></a>sangat dianjurkan membuat penanda atau tags untuk perangkat lunak yang dirilis. Hal ini amat lah lazim, yang juga terjadi di SVN. Kamu bisa membuat penanda baru dengan nama 1.0.0 dengan menjalankan :</h3><blockquote>
+<h4 id="git-tag-1-0-0-1b2e1d63ff"><a href="#git-tag-1-0-0-1b2e1d63ff" class="headerlink" title="git tag 1.0.0 1b2e1d63ff"></a><code>git tag 1.0.0 1b2e1d63ff</code></h4></blockquote>
+<h3 id="1b2e1d63ff-adalah-10-karakter-pertama-dari-identitas-komit-yang-ingin-kamu-referensikan-ke-penanda"><a href="#1b2e1d63ff-adalah-10-karakter-pertama-dari-identitas-komit-yang-ingin-kamu-referensikan-ke-penanda" class="headerlink" title="1b2e1d63ff adalah 10 karakter pertama dari identitas komit yang ingin kamu referensikan ke penanda."></a>1b2e1d63ff adalah 10 karakter pertama dari identitas komit yang ingin kamu referensikan ke penanda.</h3><blockquote>
+<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2></blockquote>
+<h3 id="dalam-bentuknya-yang-paling-sederhana-kamu-bisa-mempelajari-riwayat-repositori-menggunakan"><a href="#dalam-bentuknya-yang-paling-sederhana-kamu-bisa-mempelajari-riwayat-repositori-menggunakan" class="headerlink" title="dalam bentuknya yang paling sederhana, kamu bisa mempelajari riwayat repositori menggunakan :"></a>dalam bentuknya yang paling sederhana, kamu bisa mempelajari riwayat repositori menggunakan :</h3><blockquote>
+<h4 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a><code>git log</code></h4></blockquote>
+<h3 id="kamu-bisa-menambahkan-banyak-parameter-untuk-menampilkan-log-sesuai-keinginan-Untuk-melihat-komit-penulis-tertentu"><a href="#kamu-bisa-menambahkan-banyak-parameter-untuk-menampilkan-log-sesuai-keinginan-Untuk-melihat-komit-penulis-tertentu" class="headerlink" title="kamu bisa menambahkan banyak parameter untuk menampilkan log sesuai keinginan. Untuk melihat komit penulis tertentu:"></a>kamu bisa menambahkan banyak parameter untuk menampilkan log sesuai keinginan. Untuk melihat komit penulis tertentu:</h3><blockquote>
+<h4 id="git-log-author-bob"><a href="#git-log-author-bob" class="headerlink" title="git log --author=bob"></a><code>git log --author=bob</code></h4></blockquote>
+<h3 id="Untuk-melihat-log-yang-dimampatkan-satu-baris-per-komit"><a href="#Untuk-melihat-log-yang-dimampatkan-satu-baris-per-komit" class="headerlink" title="Untuk melihat log yang dimampatkan, satu baris per komit:"></a>Untuk melihat log yang dimampatkan, satu baris per komit:</h3><blockquote>
+<h4 id="git-log-pretty-oneline"><a href="#git-log-pretty-oneline" class="headerlink" title="git log --pretty=oneline"></a><code>git log --pretty=oneline</code></h4></blockquote>
+<h3 id="Atau-mungkin-kamu-ingin-melihat-pohon-ASCII-art-seluruh-percabangan-disertai-nama-dan-penandanya"><a href="#Atau-mungkin-kamu-ingin-melihat-pohon-ASCII-art-seluruh-percabangan-disertai-nama-dan-penandanya" class="headerlink" title="Atau mungkin kamu ingin melihat pohon ASCII art seluruh percabangan disertai nama dan penandanya:"></a>Atau mungkin kamu ingin melihat pohon ASCII art seluruh percabangan disertai nama dan penandanya:</h3><blockquote>
+<h4 id="git-log-graph-oneline-decorate-all"><a href="#git-log-graph-oneline-decorate-all" class="headerlink" title="git log --graph --oneline --decorate --all"></a><code>git log --graph --oneline --decorate --all</code></h4></blockquote>
+<h3 id="Sekedar-melihat-berkas-yang-berubah"><a href="#Sekedar-melihat-berkas-yang-berubah" class="headerlink" title="Sekedar melihat berkas yang berubah:"></a>Sekedar melihat berkas yang berubah:</h3><blockquote>
+<h4 id="git-log-name-status"><a href="#git-log-name-status" class="headerlink" title="git log --name-status"></a><code>git log --name-status</code></h4></blockquote>
+<h3 id="Ini-baru-sedikit-saja-dari-sekian-banyak-parameter-yang-bisa-kamu-gunakan-Lebih-jauh-lagi-lihat"><a href="#Ini-baru-sedikit-saja-dari-sekian-banyak-parameter-yang-bisa-kamu-gunakan-Lebih-jauh-lagi-lihat" class="headerlink" title="Ini baru sedikit saja dari sekian banyak parameter yang bisa kamu gunakan. Lebih jauh lagi, lihat :"></a>Ini baru sedikit saja dari sekian banyak parameter yang bisa kamu gunakan. Lebih jauh lagi, lihat :</h3><blockquote>
+<h4 id="git-log-help"><a href="#git-log-help" class="headerlink" title="git log --help"></a><code>git log --help</code></h4></blockquote>
+<blockquote>
+<h2 id="Mengembalikan-perubahan-lokal"><a href="#Mengembalikan-perubahan-lokal" class="headerlink" title="Mengembalikan perubahan lokal"></a>Mengembalikan perubahan lokal</h2></blockquote>
+<h3 id="Seandainya-kamu-melakukan-kesalahan-yang-tentunya-tak-pernah-terjadi-kamu-bisa-mengembalikannya-menggunakan-perintah"><a href="#Seandainya-kamu-melakukan-kesalahan-yang-tentunya-tak-pernah-terjadi-kamu-bisa-mengembalikannya-menggunakan-perintah" class="headerlink" title="Seandainya kamu melakukan kesalahan (yang tentunya tak pernah terjadi kamu bisa mengembalikannya menggunakan perintah :"></a>Seandainya kamu melakukan kesalahan (yang tentunya tak pernah terjadi kamu bisa mengembalikannya menggunakan perintah :</h3><blockquote>
+<h4 id="git-checkout-lt-namaberkas-gt"><a href="#git-checkout-lt-namaberkas-gt" class="headerlink" title="git checkout -- &lt;namaberkas&gt;"></a><code>git checkout -- &lt;namaberkas&gt;</code></h4></blockquote>
+<h3 id="perintah-di-atas-mengembalikan-perubahan-di-dalam-pokok-kerja-kamu-dengan-konten-terakhir-dari-HEAD-Perubahan-dan-berkas-baru-yang-telah-ditambahkan-ke-indeks-akan-tetap-tersimpan"><a href="#perintah-di-atas-mengembalikan-perubahan-di-dalam-pokok-kerja-kamu-dengan-konten-terakhir-dari-HEAD-Perubahan-dan-berkas-baru-yang-telah-ditambahkan-ke-indeks-akan-tetap-tersimpan" class="headerlink" title="perintah di atas mengembalikan perubahan di dalam pokok kerja kamu dengan konten terakhir dari HEAD. Perubahan dan berkas baru yang telah ditambahkan ke indeks akan tetap tersimpan."></a>perintah di atas mengembalikan perubahan di dalam pokok kerja kamu dengan konten terakhir dari HEAD. Perubahan dan berkas baru yang telah ditambahkan ke indeks akan tetap tersimpan.</h3><h3 id="Jika-kamu-ingin-menggugurkan-perubahan-dan-komit-lokal-seutuhnya-ambil-riwayat-terakhir-dari-server-dan-arahkan-ke-cabang-master-lokal-seperti-ini"><a href="#Jika-kamu-ingin-menggugurkan-perubahan-dan-komit-lokal-seutuhnya-ambil-riwayat-terakhir-dari-server-dan-arahkan-ke-cabang-master-lokal-seperti-ini" class="headerlink" title="Jika kamu ingin menggugurkan perubahan dan komit lokal seutuhnya, ambil riwayat terakhir dari server dan arahkan ke cabang master lokal seperti ini :"></a>Jika kamu ingin menggugurkan perubahan dan komit lokal seutuhnya, ambil riwayat terakhir dari server dan arahkan ke cabang master lokal seperti ini :</h3><blockquote>
+<h3 id="git-fetch-origin"><a href="#git-fetch-origin" class="headerlink" title="git fetch origin"></a><code>git fetch origin</code></h3><h3 id="git-reset-hard-origin-master"><a href="#git-reset-hard-origin-master" class="headerlink" title="git reset --hard origin/master"></a><code>git reset --hard origin/master</code></h3></blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/08/pertama-tama/" data-id="cjei8erpu0002isttcu7ar4xp" class="article-share-link">共有</a>
+      <a data-url="http://yoursite.com/2018/03/08/pertama-tama/" data-id="cjei8erpu0002isttcu7ar4xp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/08/hello-world/" data-id="cjei8b8ym0000isttrh3hdll1" class="article-share-link">共有</a>
+      <a data-url="http://yoursite.com/2018/03/08/hello-world/" data-id="cjei8b8ym0000isttrh3hdll1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -167,7 +232,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">アーカイブ</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -177,7 +242,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">最近の投稿</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
